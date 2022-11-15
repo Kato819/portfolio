@@ -12,15 +12,17 @@
     <meta name="description" content="" />
 
     <!-- css -->
-    <link rel="stylesheet" href="reset.css" />
+    <link rel="stylesheet" href="css/reset.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="css/style.css" />
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.3/gsap.min.js"></script>
-    <script src="main.js" defer></script>
+    <script src="js/main.js" defer></script>
     <script src = "https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/gsap.min.js" ></script>
     <script src = "https://cdnjs.cloudflare.com /ajax/libs/gsap/3.11.3/ScrollTrigger.min.js" ></script> 
+    <script src="https://code.jquery.com/jquery-3.6.1.min.js" integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
+    <script src="js/jQuery.js" defer></script>
   </head>
 
   <!-- body : 表示系を記述 -->
@@ -57,8 +59,7 @@
       <div class="slide-show">
         <div class="slide-show_panel"></div>
         <div class="slide-show_panel"></div>
-        <div class="slide-show_panel">
-        </div>
+        <div class="slide-show_panel"></div>
       </div>
     </div>
 
@@ -94,6 +95,16 @@
             </time>
             <p class="news-list-text">
               GitHubにてポートフォリオを公開しました。
+            </p>
+          </li>
+          <li class="news-list-item">
+            <img src="img/news_04.jpg" alt="" class="news-list-img">
+            <time class="news-list-time">
+              2022.11.<br>
+              <span class="news-list-day">10</span>             
+            </time>
+            <p class="news-list-text">
+              模写修行に掲載されている仮想のハンバーガーショップのWebサイトデザインのコーディングを行いました。
             </p>
           </li>
         </ul>
@@ -137,10 +148,13 @@
             <div class="works-content">
               <p class="works-content-ttl">仕事内容</p>
               <p class="works-content-sub">
-                このポートフォリオサイト作成<br>レスポンシブ化済み<br>
+                コーディング練習サイト
+                <span class="mosya-link"><a href="https://moshashugyo.com">模写修行</a></span>
+                で配布されているデザインのコーディングをしました。
+                コーディングのみしました。
               </p>
             </div>
-            <a href="" class="works-link">
+            <a href="https://kato819.github.io/-virtual-Hamburger-shop/" class="works-link">
               <img src="img/works_02.jpg" alt="サイトの写真">
             </a>
           </li>
@@ -148,71 +162,70 @@
             <div class="works-content">
               <p class="works-content-ttl">仕事内容</p>
               <p class="works-content-sub">
-                このポートフォリオサイト作成<br>レスポンシブ化済み<br>
+                まだ実績がありません
               </p>
             </div>
-            <a href="" class="works-link">
-              <img src="img/works_03.jpg" alt="サイトの写真">
+            <a href="index.html" class="works-link">
+              <img class ="works-img" src="img/none.jpg" alt="サイトの写真">
             </a>
           </li>
           <li class="works-list-item">
             <div class="works-content">
               <p class="works-content-ttl">仕事内容</p>
               <p class="works-content-sub">
-                このポートフォリオサイト作成<br>レスポンシブ化済み<br>
+                まだ実績がありません
               </p>
             </div>
             <a href="" class="works-link">
-              <img src="img/works_04.jpg" alt="サイトの写真">
+              <img src="img/none.jpg" alt="サイトの写真">
             </a>
           </li>
           <li class="works-list-item">
             <div class="works-content">
               <p class="works-content-ttl">仕事内容</p>
               <p class="works-content-sub">
-                このポートフォリオサイト作成<br>レスポンシブ化済み<br>
+                まだ実績がありません
               </p>
             </div>
             <a href="" class="works-link">
-              <img src="img/works_05.jpg" alt="サイトの写真">
+              <img src="img/none.jpg" alt="サイトの写真">
             </a>
           </li>
           <li class="works-list-item">
             <div class="works-content">
               <p class="works-content-ttl">仕事内容</p>
               <p class="works-content-sub">
-                このポートフォリオサイト作成<br>レスポンシブ化済み<br>
+                まだ実績がありません
               </p>
             </div>
             <a href="" class="works-link">
-              <img src="img/works_06.jpg" alt="サイトの写真">
+              <img src="img/none.jpg" alt="サイトの写真">
             </a>
           </li>
         </ul>
       </div>
 
-      <div class="btn">
-        <a href="" class="btn-link">view more</a>
+      <div class="btn view-more-btn">
+        view more
       </div>
       
     </section>
 
     <section class="form" id="form">
-      <h2 class="section-title">お問い合わせ</h2>
-      <div class="section-inner">
-        
-        <form action="">
+      <h2 class="section-title">お問い合わせ<br><span class="section-ttl-sub">※外観のみでまだ実際には送れません</span></h2>
+      <div class="section-inner">      
+        <form action="sent.php" method="post">
           <div class="form-content">
             <label for="form-name" class="form-title">名前</label>
-            <input id="form-name" type="text" class="form-input">
+            <input name="name" type="text" class="form-input">
           </div>
           <div class="form-content">
             <label for="form-email" class="form-title">メールアドレス</label>
-            <input id="form-email" type="email" class="form-input">
+            <input name="e-mail" type="email" class="form-input">
           </div>
           <div class="form-content">
             <label for="form-tel" class="form-title">電話番号</label>
-            <input id="form-tel" type="tel" class="form-input">
+            <input name="body" type="tel" class="form-input">
           </div>
           <div class="form-content">
             <label for="form-message" class="form-title">お問い合わせ内容</label>
@@ -232,6 +245,5 @@
     </footer>
 
   </body>
-
-  <!-- デザインデータ : https://xd.adobe.com/view/c383380e-bee2-4431-8e94-be90b9ae5034-96d0/ -->
 </html>
+
