@@ -51,35 +51,10 @@ body{
     
     /* kv */
 
-    .slide-show {
+    .kv {
         width: 100%;
         height: 200px;
-        position: relative;
-    }
-
-    .slide-show_panel {
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
-
-    .slide-show_panel:nth-child(1) {
-        background-image: url(original-kv03.jpg);
-    }
-
-    .slide-show_panel:nth-child(2) {
-        background-image: url(original-kv02.jpg);
-        opacity: 0;
-    }
-
-    .slide-show_panel:nth-child(3) {
         background-image: url(original-kv01.jpg);
-        opacity: 0;
     }
 
     /* news */
