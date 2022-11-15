@@ -321,6 +321,7 @@ body{
 
     .works-content{
         width: 45%;
+        padding-left: 80px;
     }
 
     .works-content-ttl{
@@ -336,7 +337,6 @@ body{
 
     .works-link{
         width: 50%;
-        padding-left: 80px;
     }
 
     .btn{
