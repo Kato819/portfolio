@@ -338,6 +338,9 @@ body{
     .works-link{
         width: 50%;
     }
+    
+    .works-img{
+        height:250px;
 
     .btn{
         color: #FFFFFF;
