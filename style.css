@@ -55,9 +55,9 @@ body{
     /* kv */
     
     .kv {
-
-        height: 420px;
-        background-image:url(original-kv01.jpg) center / cover;
+        width: 100%;
+        height: 200px;
+        background-image:url(original-kv01.jpg) 
         background-repeat: no-repeat;
     }
   
