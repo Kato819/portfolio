@@ -12,17 +12,17 @@
     <meta name="description" content="" />
 
     <!-- css -->
-    <link rel="stylesheet" href="reset.css" />
+    <link rel="stylesheet" href="css/reset.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="css/style.css" />
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.3/gsap.min.js"></script>
-    <script src="main.js" defer></script>
+    <script src="js/main.js" defer></script>
     <script src = "https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/gsap.min.js" ></script>
     <script src = "https://cdnjs.cloudflare.com /ajax/libs/gsap/3.11.3/ScrollTrigger.min.js" ></script> 
     <script src="https://code.jquery.com/jquery-3.6.1.min.js" integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
-    <script src="jQuery.js" defer></script>
+    <script src="js/jQuery.js" defer></script>
   </head>
 
   <!-- body : 表示系を記述 -->
@@ -69,7 +69,7 @@
       <div class="section-inner">
         <ul class="news-list">
           <li class="news-list-item">
-            <img src="news_01.jpg" alt="" class="news-list-img">
+            <img src="img/news_01.jpg" alt="" class="news-list-img">
             <time class="news-list-time">
               2022.10.<br>
               <span class="news-list-day">16</span>             
@@ -78,7 +78,7 @@
               プロのWebエンジニアの方に教わりながらポートフォリオ作成を始めました。</p>
           </li>
           <li class="news-list-item">
-            <img src="news_02.jpg" alt="" class="news-list-img">
+            <img src="img/news_02.jpg" alt="" class="news-list-img">
             <time class="news-list-time">
               2022.10.<br>
               <span class="news-list-day">22</span>             
@@ -88,7 +88,7 @@
             </p>
           </li>
           <li class="news-list-item">
-            <img src="news_03.jpg" alt="" class="news-list-img">
+            <img src="img/news_03.jpg" alt="" class="news-list-img">
             <time class="news-list-time">
               2022.10.<br>
               <span class="news-list-day">28</span>             
@@ -98,7 +98,7 @@
             </p>
           </li>
           <li class="news-list-item">
-            <img src="news_04.jpg" alt="" class="news-list-img">
+            <img src="img/news_04.jpg" alt="" class="news-list-img">
             <time class="news-list-time">
               2022.11.<br>
               <span class="news-list-day">10</span>             
@@ -139,8 +139,9 @@
                 このポートフォリオサイト作成<br>レスポンシブ化済み<br>
               </p>
             </div>
+
             <a href="index.html" class="works-link">
-              <img src="works_01.jpg" alt="サイトの写真">
+              <img class="works-img" src="img/works_01.jpg" alt="サイトの写真">
             </a>
           </li>
           <li class="works-list-item">
@@ -154,7 +155,7 @@
               </p>
             </div>
             <a href="https://kato819.github.io/-virtual-Hamburger-shop/" class="works-link">
-              <img src="works_02.jpg" alt="サイトの写真">
+              <img class="works-img" src="img/works_02.jpg" alt="サイトの写真">
             </a>
           </li>
           <li class="works-list-item">
@@ -164,8 +165,22 @@
                 まだ実績がありません
               </p>
             </div>
+            
             <a href="index.html" class="works-link">
-              <img class ="works-img" src="none.jpg" alt="サイトの写真">
+              <img class="works-img" src="img/none.jpg" alt="サイトの写真">
+            </a>
+            
+           
+          </li>
+          <li class="works-list-item">
+            <div class="works-content">
+              <p class="works-content-ttl">仕事内容</p>
+              <p class="works-content-sub">
+                まだ実績がありません
+              </p>
+            </div>
+            <a href="" class="works-link">
+              <img class="works-img" src="img/none.jpg" alt="サイトの写真">
             </a>
           </li>
           <li class="works-list-item">
@@ -176,7 +191,7 @@
               </p>
             </div>
             <a href="" class="works-link">
-              <img src="none.jpg" alt="サイトの写真">
+              <img class="works-img" src="img/none.jpg" alt="サイトの写真">
             </a>
           </li>
           <li class="works-list-item">
@@ -187,18 +202,7 @@
               </p>
             </div>
             <a href="" class="works-link">
-              <img src="none.jpg" alt="サイトの写真">
-            </a>
-          </li>
-          <li class="works-list-item">
-            <div class="works-content">
-              <p class="works-content-ttl">仕事内容</p>
-              <p class="works-content-sub">
-                まだ実績がありません
-              </p>
-            </div>
-            <a href="" class="works-link">
-              <img src="none.jpg" alt="サイトの写真">
+              <img class="works-img" src="img/none.jpg" alt="サイトの写真">
             </a>
           </li>
         </ul>
@@ -216,15 +220,15 @@
         <form action="sent.php" method="post">
           <div class="form-content">
             <label for="form-name" class="form-title">名前</label>
-            <input name="name" type="text" class="form-input">
+            <input id="form-name" type="text" class="form-input">
           </div>
           <div class="form-content">
             <label for="form-email" class="form-title">メールアドレス</label>
-            <input name="e-mail" type="email" class="form-input">
+            <input id="form-email" type="email" class="form-input">
           </div>
           <div class="form-content">
             <label for="form-tel" class="form-title">電話番号</label>
-            <input name="body" type="tel" class="form-input">
+            <input id="form-tel" type="tel" class="form-input">
           </div>
           <div class="form-content">
             <label for="form-message" class="form-title">お問い合わせ内容</label>
@@ -245,4 +249,3 @@
 
   </body>
 </html>
-
