@@ -69,16 +69,16 @@ body{
     }
 
     .slide-show_panel:nth-child(1) {
-        background-image: url(../img/original-kv03.jpg);
+        background-image: url(original-kv03.jpg);
     }
 
     .slide-show_panel:nth-child(2) {
-        background-image: url(../img/original-kv02.jpg);
+        background-image: url(original-kv02.jpg);
         opacity: 0;
     }
 
     .slide-show_panel:nth-child(3) {
-        background-image: url(../img/original-kv01.jpg);
+        background-image: url(original-kv01.jpg);
         opacity: 0;
     }
 
