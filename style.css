@@ -171,44 +171,12 @@ body{
 
 
 
-    .slide-show {
+    .kv {
         width: 100%;
         height: 500px;
+        background-image: url(original-kv01.jpg);
     }
-
-    .slide-show_panel {
-        position: absolute;
-        width: 100%;
-        height: 100%;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
-
-    .slide-show_panel:nth-child(1) {
-        background-image: url(../img/original-kv03.jpg);
-        background-repeat: no-repeat;
-        background-size: 100% auto;
-    }
-
-    .slide-show_panel:nth-child(2) {
-        background-image: url(../img/original-kv02.jpg);
-        background-repeat: no-repeat;
-        background-position: center;
-        background-size: 100% auto;
-
-        opacity: 0;
-    }
-
-    .slide-show_panel:nth-child(3) {
-        background-image: url(../img/original-kv01.jpg);
-        background-repeat: no-repeat;
-        background-position: center;
-        background-size: 100% auto;
-
-        opacity: 0;
-    }
-
+  
     /* news */
 
     .news{
