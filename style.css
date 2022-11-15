@@ -73,6 +73,7 @@ body{
     }
 
     .news-list-item{
+        height: 140px;
         width: 48%;
         display: flex;
         align-items: center;
