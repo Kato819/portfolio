@@ -56,7 +56,7 @@ body{
     
     .kv {
         height: 420px;
-        background: url(kv.jpg) center / cover;
+        background: url(img/kv.jpg) center / cover;
     }
   
     /* news */
